@@ -10,10 +10,15 @@ public class Deneme extends JComponent{
     }
     public void paint(Graphics g) {
         Graphics2D g2d = (Graphics2D) g;
-        Line2D yekseni = new Line2D.Double(200, 400, 200, 20);
-        Line2D xekseni = new Line2D.Double(50, 200, 450, 200);
-        Line2D L2D3 = new Line2D.Double(200, 150, 400, 200);
-        Line2D L2D4 = new Line2D.Double(200, 100, 300, 200);
+        //3x1 +2x2 = z
+        // x1+2x2>=0
+        //x1+3x2<=6
+        //x1,x2 >=0
+
+        Line2D yekseni = new Line2D.Double(400, 800, 400, 40);
+        Line2D xekseni = new Line2D.Double(100, 400, 900, 400);
+        Line2D L2D3 = new Line2D.Double(400, 300, 800, 400);
+        Line2D L2D4 = new Line2D.Double(400, 200, 600, 400);
         g2d.setColor(new Color(154, 8, 23,221));
         g2d.draw(yekseni);
         g2d.draw(xekseni);

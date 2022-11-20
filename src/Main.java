@@ -1,4 +1,6 @@
 import javax.swing.*;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.awt.*;
@@ -12,12 +14,12 @@ public class Main {
     }
     public static void main(String[] args) {
         JFrame x = new JFrame();
-        int w = 500;
-        int h = 500;
+        int w = 1000;
+        int h = 1000;
         x.setSize(w,h);
-        x.setTitle("deneme");
+        x.add(new KoordinatManager(new KordinatTablosu(w,h)));
+        x.setTitle("Grafik Yöntem");
         x.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        x.add(new Deneme(w,h));
         x.setVisible(true);
     }
 }
