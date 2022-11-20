@@ -7,11 +7,6 @@ import java.awt.*;
 import java.awt.geom.*;
 
 public class Main {
-    public static void solition(Map<Integer,String> denklem,int sonuc) {
-        Set a= denklem.keySet();
-        System.out.println(a.toString());
-
-    }
     public static void main(String[] args) {
         JFrame x = new JFrame();
         int w = 1000;
